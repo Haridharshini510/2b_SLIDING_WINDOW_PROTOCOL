@@ -22,6 +22,7 @@ s=int(input("Enter Window Size : ")) <br>
 st=0 <br>
 i=0 <br>
 while True: 
+
     while(i<len(l)): 
             st+=s         
             c.send(str(l[i:st]).encode())          

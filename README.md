@@ -35,11 +35,11 @@ while True:
 import socket <br>
 s=socket.socket() <br>
 s.connect(('localhost',8000)) <br>
-while True:    <br>
+while True:   
 
-    print(s.recv(1024).decode()) <br>
+    print(s.recv(1024).decode())
     
-    s.send("acknowledgement recived from the server".encode())  <br>
+    s.send("acknowledgement recived from the server".encode())  
     
 ## OUPUT
 ![Screenshot (416)](https://github.com/user-attachments/assets/bb8bc4f7-b1ab-488f-b782-20853968e49e)

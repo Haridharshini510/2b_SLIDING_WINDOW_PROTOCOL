@@ -20,26 +20,21 @@ s=int(input("Enter Window Size : ")) <br>
 st=0 <br>
 i=0 <br>
 while True: 
-    while(i<len(l)):   
-            st+=s             
-            c.send(str(l[i:st]).encode())             
-            ack=c.recv(1024).decode()             
-            if ack:             
-                print(ack)                 
-                i+=s
+   <t><t><t> while(i<len(l)):   
+       <t><t><t><t><t>     st+=s             
+          <t><t><t><t><t>  c.send(str(l[i:st]).encode())             
+         <t><t><t><t><t>   ack=c.recv(1024).decode()             
+          <t><t><t><t><t>  if ack:             
+              <t><t><t><t><t><t><t><t>  print(ack)                 
+               <t><t><t><t><t><t><t><t> i+=s
  ## SERVER
   
-import socket 
-
-s=socket.socket() 
-
-s.connect(('localhost',8000)) 
-
-while True:    
-
-    print(s.recv(1024).decode()) 
-    
-    s.send("acknowledgement recived from the server".encode())  
+import socket <br>
+s=socket.socket() <br>
+s.connect(('localhost',8000)) <br>
+while True:    <br>
+    print(s.recv(1024).decode()) <br>
+    s.send("acknowledgement recived from the server".encode())  <br>
     
 ## OUPUT
 ![Screenshot (416)](https://github.com/user-attachments/assets/bb8bc4f7-b1ab-488f-b782-20853968e49e)
